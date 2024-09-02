@@ -7,5 +7,17 @@ components:
 installer:
   modules:
     - cicd
+  arch: multi-arch
 argo-cd:
+  enabled: true
+security:
+  enabled: true
+  trivy:
+    enabled: true
+notifier:
+  enabled: true
+monitoring:
+  grafana:
+    enabled: true
+minio:
   enabled: true
